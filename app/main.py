@@ -61,10 +61,10 @@ class Battleship:
         ships: List[Tuple[Tuple[int, int], Tuple[int, int]]]
     ) -> None:
         self.field: Dict[Tuple[int, int], Ship] = {}  # (row, col) -> Ship
-        
+
         for start, end in ships:
             ship = Ship(start, end)
-        
+
             for deck in ship.decks:
                 coord = (deck.row, deck.column)
 
