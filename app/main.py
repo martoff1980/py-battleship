@@ -93,5 +93,5 @@ class Battleship:
 
         if ship.is_drowned:
             return "Sunk!"
-        else:
-            return "Hit!"
+
+        return "Hit!"
